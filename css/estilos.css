@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    background-color: hsl(290, 4%, 29%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-color: #959396;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 3px 5px 20px 2px;
+}
+
+.numeros {
+    background-color: hsl(0, 0%, 65%);
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+}
+
+.display-2 {
+    font-size: 25px;
+    text-align: right;
+    border: none;
+}
+
+.numeros button:nth-child(1) {
+    grid-column: 1/4;
+    background-color: hsl(176, 100%, 44%);
+    border: 1px solid hsl(176, 100%, 44%);
+    color: #ffffff;
+}
+
+.numeros button:nth-child(15) {
+    grid-column: 1/3;
+}
+
+.calculo {
+    background-color: hsl(0, 0%, 93%);
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.calculo {
+    text-align: right;
+    font-size: 20px;
+}
+
+button {
+    font-size: 23px;
+    border: 1px solid hsl(0, 11%, 95%);
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: hsl(0, 11%, 95%);
+
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+.signos {
+    border: 1px solid #248fd6;
+    background-color: #248fd6;
+}
